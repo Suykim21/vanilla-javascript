@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "company": "123 Designs",
+    "phone": "555-555-5555"
+  },
+  {
+    "id": 2,
+    "name": "Steve Doe",
+    "company": "Diners",
+    "phone": "555-555-5555"
+  },
+  {
+    "id": 3,
+    "name": "Boon Doe",
+    "company": "Boon Town",
+    "phone": "555-555-5555"
+  },
+  {
+    "id": 4,
+    "name": "Jane Doe",
+    "company": "Jane Fashions",
+    "phone": "555-555-5555"
+  }
+]
