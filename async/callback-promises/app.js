@@ -86,6 +86,7 @@ function getPosts() {
 
 createPost({title: 'Post Three', body: "This is post three"})
 .then(getPosts)
+// err = reject('Error: Something went wrong')
 .catch(function(err) {
   console.log(err);
 });
