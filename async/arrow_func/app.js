@@ -30,7 +30,7 @@ const sayHello = function() {
 */
 
 /*
-// RETURN OBJECT
+// RETURN OBJECT - need ()
 const sayHello = () => ({msg:'Hello'});
 console.log(sayHello());
 */

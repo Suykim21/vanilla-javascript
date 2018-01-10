@@ -23,12 +23,13 @@ function getText() {
 function getText() {
   // fetch returns promises - then, catch
   fetch('test.txt')
-  .then(res => res.text())
-  .then(data => {
-    console.log(data);
-    document.getElementById('output').innerHTML = data;
-  })
-  .catch(err => console.log(err))
+    .then(res => res.text())
+    // data = res.text()
+    .then(data => {
+      console.log(data);
+      document.getElementById('output').innerHTML = data;
+    })
+    .catch(err => console.log(err))
 }
 
 /*
@@ -57,14 +58,14 @@ function getJson() {
 function getJson() {
   // fetch returns promises - then, catch
   fetch('posts.json')
-  .then(res => res.json())
-  .then(data => {
-    console.log(data);
-    let output = '';
-    data.forEach(post => {
-      output += `<li>${post.title}</li>`
-    });
-    document.getElementById('output').innerHTML = output;
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      let output = '';
+      data.forEach(post => {
+        output += `<li>${post.title}</li>`
+      });
+      document.getElementById('output').innerHTML = output;
   })
   .catch(err => console.log(err))
 }
